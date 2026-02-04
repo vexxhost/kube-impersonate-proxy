@@ -1,0 +1,18 @@
+# Copyright (c) 2025 VEXXHOST, Inc.
+# SPDX-License-Identifier: Apache-2.0
+
+[tools]
+go = "1.25"
+golangci-lint = "latest"
+
+[tasks.build]
+description = "Build the binary"
+run = "go build -o bin/kube-impersonate-proxy ./cmd/kube-impersonate-proxy"
+
+[tasks.test]
+description = "Run tests"
+run = "go run github.com/onsi/ginkgo/v2/ginkgo ./..."
+
+[tasks.lint]
+description = "Run linter"
+run = "golangci-lint run"
