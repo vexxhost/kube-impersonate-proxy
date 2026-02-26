@@ -2,7 +2,7 @@
 # SPDX-License-Identifier: Apache-2.0
 
 [tools]
-go = "1.25"
+go = "1.26.0"
 golangci-lint = "latest"
 
 [tasks.build]
